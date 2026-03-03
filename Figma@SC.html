@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrimo - About Us</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f8f8f6;
+  color:#333;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* NAVBAR */
+header{
+  background:#1f1f1f;
+  padding:15px 0;
+  color:white;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:42px;
+  font-weight:700;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:25px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.menu-toggle{
+  display:none;
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  height:350px;
+  background:url('https://apexriminternational.com/images/header-images/contact.png') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  color:white;
+  position:relative;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+}
+
+.hero h1{
+  font-size:40px;
+}
+
+/* ABOUT SECTION */
+.about{
+  padding:80px 0;
+  display:flex;
+  gap:50px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.about img{
+  width:100%;
+  max-width:450px;
+  border-radius:20px;
+}
+
+.about-text{
+  flex:1;
+}
+
+.about-text h2{
+  font-size:32px;
+  margin-bottom:20px;
+}
+
+.stats{
+  background:#e5e25c;
+  padding:15px 25px;
+  border-radius:15px;
+  display:inline-block;
+  margin-top:20px;
+  font-weight:600;
+}
+
+/* SERVICES */
+.services{
+  padding:80px 0;
+  text-align:center;
+}
+
+.services h2{
+  margin-bottom:40px;
+}
+
+.service-cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card img{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+}
+
+/* TESTIMONIALS */
+.testimonials{
+  padding:80px 0;
+  background:white;
+}
+
+.testimonial-cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.testimonial{
+  background:#f9f9f9;
+  padding:25px;
+  border-radius:15px;
+}
+
+.testimonial img{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  margin-top:15px;
+}
+
+/* FOOTER */
+footer{
+  background:#eee75c;
+  padding:40px 0;
+  margin-top:60px;
+}
+
+.footer-content{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:30px;
+}
+
+footer h3{
+  margin-bottom:10px;
+}
+
+footer p{
+  font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+  .nav-links{
+    position:absolute;
+    top:60px;
+    right:0;
+    background:#1f1f1f;
+    flex-direction:column;
+    width:200px;
+    padding:20px;
+    display:none;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Agrimo</div>
+      <div class="menu-toggle">☰</div>
+      <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PAGES</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CONTACT US</a></li></ul>
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="hero">
+  <div class="container hero-content">
+    <h1>About Us</h1>
+  </div>
+</section>
+ <section class="container about">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxC6KXOBBhkKEFx1B_777LQE-RiZU7b7k4prjzEk03BQ&s&ec=121532756" alt="">
+  <div class="about-text">
+    <h2>Currently we are growing and selling organic food</h2>
+    <p>
+      There are many variations of passages of lorem available,but the majority 
+      have suffered alteration in some form,by injected humor ,or randomised words 
+      which don't look even  
+    </p>
+    <div class="stats">435+ Growers Joined</div>
+     <h2>Eco Farms Worldwide</h2>
+      <p>There are many variations of pass
+        ages of lorem ipsum available
+        majority have suffered
+      </p>
+      <h2>Special Equipment</h2>
+      <p>There are many variations of pass
+        ages of lorem ipsum available
+        majority have suffered
+      </p>
+</div>
+</section>
+<section class="services container">
+  <h2>Best Agriculture Services</h2>
+  <div class="service-cards">
+    <div class="card">
+    <img src="https://img.freepik.com/premium-photo/tractor-mowing-green-field-aerial-viewgenerative-ai_750630-6356.jpg?w=360">
+      <h6>.FERTILIZER</h6>
+      <h4>Harvest Concepts</h4>
+    </div>
+    <div class="card">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2025/2/486754738/RF/HF/PM/52032803/fruit-nursery-plants.jpg">
+      <h6>.FRUITS</h6>
+      <h4>Farming Products</h4>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX0GYV-Cp6azFE23FoDxXdJ-7EN87IykAO7vHDporvTQ&s&ec=121532756">
+      <h6>.FERTILIZER</h6>
+      <h4>Soil Fertilization</h4>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN66hnvT5Z8tQtd1SwvN8n1bduMzbuYAfjc_1GqlUr9w&s&ec=121532756">
+      <h6>.FRUITS</h6>
+      <h4>Fresh Vegetables</h4>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <h2>What our customers say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial">
+        <p>"I Would recommend paractitioners at this center to everyone!They are great to work with and are excellent trainers. Thank you all!"</p>
+        <img src="https://randomuser.me/api/portraits/men/32.jpg">
+        <h4>Daniel Craig</h4>
+        <h6>CO FOUNDER</h6>
+      </div>
+      <div class="testimonial">
+        <p>"I Would recommend paractitioners at this center to everyone!They are great to work with and are excellent trainers. Thank you all!"</p>
+        <img src="https://randomuser.me/api/portraits/women/45.jpg">
+        <h4>Amelia Dyer</h4>
+        <h6>MANGER</h6>
+      </div>
+      <div class="testimonial">
+        <p>"I Would recommend paractitioners at this center to everyone!They are great to work with and are excellent trainers. Thank you all!"</p>
+        <img src="https://randomuser.me/api/portraits/women/68.jpg">
+        <h4>Henry Cavill</h4>
+         <h6>CEO&FOUNDER</h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-content">
+    <div>
+      <h1 align="left">Agrimo</h1 align="left">
+          <h4 align="Center">Professional & modern, a theme designed to help your business stand out from the rest.</h4 align="Center">
+         
+    </div>
+    <div>
+    <h3 align="center">Useful Link </h3 align="center">
+                   <h5 align="left">Company</h5 align="left">
+                   <h5 align="left">About</h5 align="left">
+                   <h5 align="left">Contant</h5 align="left">
+         <h3 align="center">Working Time</h3 align="center">
+                        <h5 align="left">Mon-Fri:9.00am-5.00pm</h5 align="left">
+                        <h5 align="left">Saturday:10.00am-6.00pm</h5 align="left">
+                        <h5 align="left">Sunday Closed</h5 align="left">
+                 <h3 align="center">Our Address </h3 align="center">
+                                <h5 align="left">Old Westbury 256, New York</h5 align="left">
+                                <h5 align="left">11201, Unites States</h5 align="left">
+    </div>
+  </div>
+</footer>
+
+<script>
+const toggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav-links");
+
+toggle.addEventListener("click", ()=>{
+  nav.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
